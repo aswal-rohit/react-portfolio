@@ -1,0 +1,46 @@
+.p{
+  width:30%;
+  height: 40vh;
+  border: 1px solid rgb(199, 198, 198);
+  margin: 20px 10px;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.browser{
+  height: 15px;
+  background-color: rgb(13, 13, 109);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 3;
+}
+.circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color:rgb(199, 198, 198);
+  margin-left: 10px;
+}
+.p-img{
+  width: 100%;
+  transition: all 10s ease;
+}
+.p:hover .p-img{
+  transform: translateY(-100%);
+}
+
+@media screen and (max-width:768px){
+  .p{
+    width:40%;
+  }
+  .p-img{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width:425px){
+  .p{
+    width: 80%;
+  }
+}
